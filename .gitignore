@@ -1,0 +1,27 @@
+# =========================
+# FRONTEND (React / Node)
+# =========================
+node_modules/
+dist/
+dist-ssr/
+npm-debug.log*
+.env
+.local
+
+# =========================
+# BACKEND (Spring Boot / Java)
+# =========================
+target/
+*.jar
+*.war
+*.class
+logs/
+*.log
+
+# =========================
+# IDEs & OS Files (IntelliJ / VS Code / Mac)
+# =========================
+.idea/
+*.iml
+.vscode/
+.DS_Store

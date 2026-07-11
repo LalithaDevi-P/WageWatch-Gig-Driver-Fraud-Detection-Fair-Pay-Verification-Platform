@@ -1,0 +1,87 @@
+:root {
+  --text: #9ca3af;
+  --text-h: #f3f4f6;
+  --bg: #121212; /* Updated to match WageWatch Dark Theme */
+  --border: #2e303a;
+  --code-bg: #1f2028;
+  --accent: #2ecc71; /* Updated to WageWatch Green */
+  --accent-bg: rgba(46, 204, 113, 0.1);
+  --accent-border: rgba(46, 204, 113, 0.5);
+  --social-bg: rgba(47, 48, 58, 0.5);
+  --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark; /* Force Dark Mode */
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================
+  GLOBAL RESET FOR FULL-SCREEN DASHBOARD
+  =========================================
+*/
+*, *::before, *::after {
+  box-sizing: border-box; /* Forces padding to be calculated inward */
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  overflow: hidden; /* Prevents both horizontal and vertical page-level scrolling */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  /* Removed the restrictive 1126px width, centering, and borders from the default Vite CSS */
+}
+
+/* Keep your basic typography */
+h1, h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+}
+
+p {
+  margin: 0;
+}
+
+code, .counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
