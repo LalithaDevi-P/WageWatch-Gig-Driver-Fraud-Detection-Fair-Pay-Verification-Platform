@@ -65,10 +65,12 @@ echo Starting WageWatch Platform
 echo =======================================
 
 echo 1. Starting Spring Boot Backend...
-start "WageWatch Backend" cmd /k "cd analytics && mvn spring-boot:run"
+start "WageWatch Backend"
+cmd /k "cd analytics && mvn spring-boot:run"
 
 echo 2. Starting React Frontend...
-start "WageWatch Frontend" cmd /k "cd wagewatch-frontend && npm run dev"
+start "WageWatch Frontend"
+cmd /k "cd wagewatch-frontend && npm run dev"
 
 echo.
 echo Applications are launching in separate windows.
